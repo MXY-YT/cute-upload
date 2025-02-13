@@ -1,0 +1,22 @@
+server:
+  port: 5845
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cute-upload-demo
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 10240MB
+      max-request-size: 10240MB
+
+upload:
+  host: 'http://localhost:5845/' # 项目部署的 URL, 例如： http://localhost:5845/
+  path: 'public/upload'
+  maxSize: 5368709120 # 5G
+
+
+mybatis-plus:
+  configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志

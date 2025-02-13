@@ -1,0 +1,50 @@
+{
+  "name": "cute-upload-node",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "build:prod": "cross-env NODE_ENV=production npx tsc",
+    "start": "npx tsc && node dist/index.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --watch src -e ts --exec ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/mysql": "^2.15.26",
+    "express": "5.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.4",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  },"description": "基于 Vue3 + NodeJS / SpringBoot 的 大文件上传（ 切片上传 / 断点续传 / 暂停上传 / 文件校验） 前端技术: Vue3 + Vite + Element Plus + TypeScript 后端技术1：NodeJs + Express + TypeScript 后端技术2：SpringBoot3 + MyBatisPlus 数据库: Mysql 8.0",
+  "author": {
+    "name": "洛尘云天",
+    "email": "admin@cuteshamoye.cn",
+    "url": "https://gitee.com/luochen-yuntian"
+  },
+  "contributors": [
+    {
+      "name": "Salvia",
+      "email": "salvia@cuteshamoye.cn",
+      "url": "https://gitee.com/salviaany"
+    }
+  ],
+  "keywords": [
+    "大文件上传",
+    "切片上传",
+    "断点续传",
+    "暂停上传",
+    "文件校验"
+  ],
+  "homepage": "",
+  "bugs": {
+    "email": "admin@cuteshamoye.cn"
+  },
+  "license": "Apache-2.0"
+}

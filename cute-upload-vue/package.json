@@ -1,0 +1,50 @@
+{
+  "name": "cute-upload-vue",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.7.9",
+    "element-plus": "^2.9.2",
+    "spark-md5": "^3.0.2",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/spark-md5": "^3.0.5",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0"
+  },
+  "description": "基于 Vue3 + NodeJS / SpringBoot 的 大文件上传（ 切片上传 / 断点续传 / 暂停上传 / 文件校验） 前端技术: Vue3 + Vite + Element Plus + TypeScript 后端技术1：NodeJs + Express + TypeScript 后端技术2：SpringBoot3 + MyBatisPlus 数据库: Mysql 8.0",
+  "author": {
+    "name": "洛尘云天",
+    "email": "admin@cuteshamoye.cn",
+    "url": "https://gitee.com/luochen-yuntian"
+  },
+  "contributors": [
+    {
+      "name": "Salvia",
+      "email": "salvia@cuteshamoye.cn",
+      "url": "https://gitee.com/salviaany"
+    }
+  ],
+  "keywords": [
+    "大文件上传",
+    "切片上传",
+    "断点续传",
+    "暂停上传",
+    "文件校验"
+  ],
+  "homepage": "",
+  "bugs": {
+    "email": "admin@cuteshamoye.cn"
+  },
+  "license": "Apache-2.0"
+}

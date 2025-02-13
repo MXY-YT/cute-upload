@@ -1,0 +1,17 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"verbatimModuleSyntax": false,
+		"noImplicitAny": false,
+		"paths": {
+			"/@/*": ["./src/*"],
+			"/!/*": ["./public/*"]
+		},
+		"types": [
+			"element-plus/global"
+		]
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.vue"],
+	"exclude": ["node_modules", "dist"]
+}
